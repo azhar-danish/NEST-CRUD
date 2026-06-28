@@ -7,22 +7,7 @@ export class BookService {
         this.books.push(book);
         return { message: "Book added successfully", book };
     }
-
-    // updateBook(bookId: string, bookData: Partial<Book>): Object {
-    //     return {
-    //         message: "Book updated successfully",
-    //         bookId: bookData.id
-    //     };
-    // }
-
-    deleteBook(bookId: string): Object {
-        return { message: "Booke deleted successfully" }
-    }
-
-    findBookById(bookId: string): Book {
-        return { id: '101', title: 'Java Book', author: 'James', published: true }
-    }
-
+    
     getAllBooks(): Object {
         let allBooks: Book[] = [];
         allBooks = this.books;
